@@ -4,9 +4,9 @@
   <subtitle>Music Art.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yyqhart.com/"/>
+  <link href="http://blog.yyqhart.com/"/>
   <updated>2017-02-22T10:26:43.000Z</updated>
-  <id>http://yyqhart.com/</id>
+  <id>http://blog.yyqhart.com/</id>
   
   <author>
     <name>Marry Lai</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>当我们弹视奏的时候我们谈什么</title>
-    <link href="http://yyqhart.com/2017/02/22/sight-playing-advance/"/>
-    <id>http://yyqhart.com/2017/02/22/sight-playing-advance/</id>
+    <link href="http://blog.yyqhart.com/2017/02/22/sight-playing-advance/"/>
+    <id>http://blog.yyqhart.com/2017/02/22/sight-playing-advance/</id>
     <published>2017-02-22T10:18:17.000Z</published>
     <updated>2017-02-22T10:26:43.000Z</updated>
     
@@ -57,14 +57,14 @@
     </summary>
     
     
-      <category term="视奏" scheme="http://yyqhart.com/tags/%E8%A7%86%E5%A5%8F/"/>
+      <category term="视奏" scheme="http://blog.yyqhart.com/tags/%E8%A7%86%E5%A5%8F/"/>
     
   </entry>
   
   <entry>
     <title>缘音艺术中心简介</title>
-    <link href="http://yyqhart.com/2017/02/22/yyqh-introduce/"/>
-    <id>http://yyqhart.com/2017/02/22/yyqh-introduce/</id>
+    <link href="http://blog.yyqhart.com/2017/02/22/yyqh-introduce/"/>
+    <id>http://blog.yyqhart.com/2017/02/22/yyqh-introduce/</id>
     <published>2017-02-22T09:52:56.000Z</published>
     <updated>2017-02-22T10:00:31.000Z</updated>
     
@@ -81,7 +81,7 @@
     </summary>
     
     
-      <category term="简介" scheme="http://yyqhart.com/tags/%E7%AE%80%E4%BB%8B/"/>
+      <category term="简介" scheme="http://blog.yyqhart.com/tags/%E7%AE%80%E4%BB%8B/"/>
     
   </entry>
   
