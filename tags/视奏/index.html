@@ -1,23 +1,322 @@
-extends partial/layout
-include mixins/container
-include mixins/paginator
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-block title
-  title
-    if page.archive
-        != __('Archives') + " · " + config.title
-    if page.tag
-        != page.tag + " · " + config.title
-    if page.category
-        != page.category + " · " + config.title
 
-block container
-  if page.archive
-    +archive()
-  if page.tag
-    +tag()
-  if page.category
-    +category()
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-block pagination
-  +paginator('archive')
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="缘音琴行">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.2.x" />
+
+
+
+<link rel="canonical" href="http://yyqhart.com/tags/视奏/"/>
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="缘音琴行">
+<meta property="og:url" content="http://yyqhart.com/tags/视奏/index.html">
+<meta property="og:site_name" content="缘音琴行">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="缘音琴行">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.2.x" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    search: {
+      enable: true,
+      path: "/search.xml",
+    },
+    navbar: {
+      enable: true
+    },
+    fancybox: {
+      enable: true
+    },
+    toc: {
+      enable: true
+    },
+  };
+</script>
+
+
+
+  
+
+
+
+    <title>
+  
+    视奏 · 缘音琴行
+  
+</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">缘音琴行</a>
+</div>
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+      
+        <li class="menu-search">
+          <form>
+            <i class="iconfont icon-search" id="open-search"></i>
+            <input type="text" class="search-input" id="search-input" />
+            <i class="iconfont icon-close" id="close-search"></i>
+          </form>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+<div class="mobile-navbar">
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/." class="logo">缘音琴行</a>
+    </div>
+
+    <div class="mobile-header-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    
+      <a class="mobile-menu-item" href="/">
+        
+        
+          Home
+        
+      </a>
+    
+      <a class="mobile-menu-item" href="/archives/">
+        
+        
+          Archives
+        
+      </a>
+    
+      <a class="mobile-menu-item" href="/tags">
+        
+        
+          Tags
+        
+      </a>
+    
+      <a class="mobile-menu-item" href="/about">
+        
+        
+          About
+        
+      </a>
+    
+  </nav>
+</div>
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <section id="archive" class="archive">
+    
+      
+        <div class="archive-title tag">
+          <h2 class="archive-name">视奏</h2>
+        </div>
+      
+    
+
+    
+      
+      
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2017-02-22
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2017/02/22/sight-playing-advance/" class="archive-post-link">
+            当我们弹视奏的时候我们谈什么
+          </a>
+        </span>
+      </div>
+    
+  </section>
+
+  
+  <nav class="pagination">
+    
+    
+  </nav>
+
+
+
+          </div>
+          
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:marrylaiok@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="/marrylai" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Marry Lai</span>
+  </span>
+</div>
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.2.x"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.2.x"></script>
+
+  </body>
+</html>
