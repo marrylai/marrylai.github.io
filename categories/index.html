@@ -51,23 +51,15 @@
 
 
 
-<script type="text/javascript">
-  var themeConfig = {
-    search: {
-      enable: true,
-      path: "/search.xml",
-    },
-    navbar: {
-      enable: true
-    },
-    fancybox: {
-      enable: true
-    },
-    toc: {
-      enable: true
-    },
-  };
+<script>
+  var CONFIG = {
+    search: true,
+    searchPath: "/search.xml",
+    fancybox: true,
+    toc: true,
+  }
 </script>
+
 
 
 
@@ -88,13 +80,65 @@
     <title> 分类 · 广州市缘音艺术中心 </title>
   </head>
 
-  <body>
-    <div class="container">
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">广州市缘音艺术中心</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
       <header id="header" class="header"><div class="logo-wrapper">
   <a href="/." class="logo">广州市缘音艺术中心</a>
 </div>
 
-<nav class="site-nav">
+<nav class="site-navbar">
   
     <ul id="menu" class="menu">
       
@@ -102,7 +146,7 @@
           <a class="menu-item-link" href="/">
             
             
-              Home
+              首页
             
           </a>
         </li>
@@ -111,7 +155,7 @@
           <a class="menu-item-link" href="/archives/">
             
             
-              Archives
+              归档
             
           </a>
         </li>
@@ -120,7 +164,7 @@
           <a class="menu-item-link" href="/tags">
             
             
-              Tags
+              标签
             
           </a>
         </li>
@@ -129,7 +173,7 @@
           <a class="menu-item-link" href="/about">
             
             
-              About
+              关于
             
           </a>
         </li>
@@ -147,50 +191,6 @@
   
 </nav>
 
-<div class="mobile-navbar">
-  <div class="mobile-header">
-    <div class="mobile-header-logo">
-      <a href="/." class="logo">广州市缘音艺术中心</a>
-    </div>
-
-    <div class="mobile-header-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-  <nav class="mobile-menu">
-    
-      <a class="mobile-menu-item" href="/">
-        
-        
-          Home
-        
-      </a>
-    
-      <a class="mobile-menu-item" href="/archives/">
-        
-        
-          Archives
-        
-      </a>
-    
-      <a class="mobile-menu-item" href="/tags">
-        
-        
-          Tags
-        
-      </a>
-    
-      <a class="mobile-menu-item" href="/about">
-        
-        
-          About
-        
-      </a>
-    
-  </nav>
-</div>
       </header>
 
       <main id="main" class="main">
@@ -210,11 +210,10 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="categories/index.html"
-           data-title="Categories" data-url="http://blog.yyqhart.com/categories/index.html">
-      </div>
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
     
   </div>
+
 
         </div>  
       </main>
@@ -290,18 +289,19 @@
     
   
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"marrylai"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
+  
+  
+  <script>
+    var cloudTieConfig = {
+      url: document.location.href, 
+      sourceId: "",
+      productKey: "739962f928fe45778b315357ac3f7d69",
+      target: "cloud-tie-wrapper"
+    };
   </script>
+  <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+
+
 
 
 
@@ -317,11 +317,43 @@
   
 
   
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
     <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
   
 
+
     <script type="text/javascript" src="/js/src/even.js?v=2.2.x"></script>
 <script type="text/javascript" src="/js/src/bootstrap.js?v=2.2.x"></script>
+
+    
+  <script type="text/html" id="search-result">
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">
+          <a href="$url$" class="post-link">
+            $title$
+          </a>
+        </h1>
+      </header>
+      <div class="post-content">
+        $content$
+        <div class="read-more">
+          <a href="$url$" class="read-more-link">
+            阅读更多
+          </a>
+        </div>
+      </div>
+    </article>
+  </script>
+  <script type="text/html" id="no-search-result">
+    <div class="no-result">
+      <h2>No result found!</h2>
+    </div>
+  </script>
+  <script type="text/javascript" src="/js/src/search.js?v=2.2.x"></script>
 
   </body>
 </html>
